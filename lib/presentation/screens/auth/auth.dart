@@ -43,41 +43,18 @@ class _AuthState extends State<Auth> {
                       .fontWeight(FontWeight.w700)
                       .make(),
                   20.h.heightBox,
-                  ElevatedButton(
-                    onPressed: () {},
-                    style: ElevatedButton.styleFrom(
-                        backgroundColor: MyColors.primaryColor,
-                        minimumSize:
-                            Size(MediaQuery.of(context).size.width, 44.h),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(11.r),
-                        )),
-                    child: "Login"
-                        .text
-                        .size(16.sp)
-                        .fontWeight(FontWeight.w700)
-                        .make(),
+                  PrimaryButton(
+                    title: 'Login',
+                    onPressed: () {
+                      context.push(Login.route);
+                    },
                   ),
                   12.h.heightBox,
-                  ElevatedButton(
-                    onPressed: () {},
-                    style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.transparent,
-                        minimumSize:
-                            Size(MediaQuery.of(context).size.width, 44.h),
-                        shape: RoundedRectangleBorder(
-                          side: const BorderSide(
-                            color: MyColors.white,
-                          ),
-                          borderRadius: BorderRadius.circular(11.r),
-                        )),
-                    child: "Register"
-                        .text
-                        .white
-                        .size(16.sp)
-                        .fontWeight(FontWeight.w700)
-                        .make(),
-                  ),
+                  OutlineButton(
+                      onPressed: () {
+                        context.push(Register.route);
+                      },
+                      title: 'Register'),
                 ],
               ),
             ),

@@ -40,22 +40,11 @@ class _OnboardState extends State<Onboard> {
               SizedBox(
                 height: 61.h,
               ),
-              ElevatedButton(
-                onPressed: () {
-                  context.go(Auth.route);
-                },
-                style: ElevatedButton.styleFrom(
-                    backgroundColor: MyColors.primaryColor,
-                    minimumSize: Size(MediaQuery.of(context).size.width, 44.h),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(11.r),
-                    )),
-                child: "Get Started"
-                    .text
-                    .size(16.sp)
-                    .fontWeight(FontWeight.w700)
-                    .make(),
-              ),
+              PrimaryButton(
+                  title: "Get Started",
+                  onPressed: () {
+                    context.go(Auth.route);
+                  }),
               SizedBox(
                 height: 61.h,
               ),
