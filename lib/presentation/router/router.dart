@@ -9,5 +9,6 @@ final fRoutes = GoRouter(
     GoRoute(path: Login.route, builder: (_, __) => const Login()),
     GoRoute(path: Register.route, builder: (_, __) => const Register()),
     GoRoute(path: General.route, builder: (_, __) => const General()),
+    GoRoute(path: HomeDetails.route, builder: (_, __) => const HomeDetails()),
   ],
 );

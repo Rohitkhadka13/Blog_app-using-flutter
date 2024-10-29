@@ -50,6 +50,7 @@ dependencies:
   flutter_screenutil: ^5.9.3
   animation_wrappers: ^3.0.0
   go_router: ^14.3.0
+  flutter_quill: ^10.8.5
 
 dev_dependencies:
   flutter_test:
